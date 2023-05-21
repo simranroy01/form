@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey_Form</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="heading">
+        Survey Form
+    </div>
+
+    <div class="form-details">
+        <form>
+            <label for="nameInput" class=""> Name <br>
+                <input type="text" class="input" id="name">
+            </label> <br>
+            <label for="dobInput"> Date of Birth <br>
+                <input type="date" class="input" id="dob">
+            </label> <br>
+            <label for="emailInput"> Email ID <br>
+                <input type="email" class="input" id="email">
+            </label> <br>
+            <p>Gender:</p> <br>
+            <label for="genderInput"> Male <br>
+                <input type="radio" class="input" id="male" name="gender" value="male">
+            </label> <br>
+            <label for="genderInput"> Female <br>
+                <input type="radio" class="input" id="female" name="gender" value="female">
+            </label> <br>
+            <label for="genderInput"> Prefer not to say <br>
+                <input type="radio" class="input" id="prefer not to say" name="gender" value="prefer not to say">
+            </label> <br><br>
+            <p>Qualification:</p> <br>
+            <label for="a"> Intermediate <br>
+                <input type="checkbox" class="input" id="a" name="a" value="intermediate">
+            </label> <br>
+            <label for="b"> Graduate <br>
+                <input type="checkbox" class="input" id="b" name="b" value="graduate">
+            </label> <br>
+            <label for="c"> Post Graduate <br>
+                <input type="checkbox" class="input" id="c" name="c" value="post graduate">
+            </label> <br> <br>
+            <label for="branch">Your branch:</label>
+            <select name="branch" class="input" id="branch">
+                <option value="CSE core" class="input">CSE core</option>
+                <option value="CSE with specialization" class="input">CSE with specialization</option>
+                <option value="IT" class="input">IT</option>
+                <option value="Electrical" class="input">Electrical</option>
+                <option value="Mechanical" class="input">Mechanical</option>
+                <option value="Civil" class="input">Civil</option>
+            </select>
+            <br><br>
+            <label for="q1">Brief about your current technical knowledge: <br>
+                <textarea name="ans1" id="curKnowledge" cols="35" rows="5" class="input"></textarea>
+            </label> <br>
+            <label for="q2">What do you aim to achieve? <br>
+                <textarea name="ans2" id="aim" cols="35" rows="5" class="input"></textarea>
+            </label> <br>
+            <label for="q3">Describe your dream project: <br>
+                <textarea name="ans3" id="dreamProject" cols="35" rows="5" class="input"></textarea>
+            </label> <br>
+
+            <button type="submit" id="button" class="button">
+                SUBMIT
+            </button>
+            
+        </form>
+    </div>
+    <script src="app.js" type="module"></script>
+</body>
+</html>
